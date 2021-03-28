@@ -1,0 +1,30 @@
+.mainDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../foto/bgimg.jpg");
+  background-size: 100%;
+}
+
+.formLogin {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 10px;
+  width: 250px;
+
+  background-color: aquamarine;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0 0 3px black;
+}
+
+.inputLogin {
+  margin-bottom: 10px;
+}

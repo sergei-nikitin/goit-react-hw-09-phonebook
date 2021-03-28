@@ -1,0 +1,11 @@
+.mainDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../foto/bgimg.jpg");
+  background-color: navy;
+  background-size: 100%;
+
+  padding-top: 20px;
+  margin-top: 40px;
+}

@@ -1,0 +1,26 @@
+.divContactList {
+  width: 250px;
+  padding: 10px 10px 1px 10px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: aquamarine;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}

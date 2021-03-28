@@ -1,0 +1,18 @@
+.divUserMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.span {
+  font-weight: 600;
+}
+
+.btnExit {
+  height: 20px;
+  margin-left: 5px;
+}
+
+.btnExit:hover {
+  background-color: darkgray;
+}
