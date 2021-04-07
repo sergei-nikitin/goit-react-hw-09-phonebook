@@ -3,20 +3,15 @@ import Navigations from "../navigation";
 import AuthNav from "../authNav";
 import UserMenu from "../userMenu";
 import styles from "./Header.module.css";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 import authSelectors from "../../redux/auth/auth-selectors";
 
-const Header = ({ isAuthenticated }) => {
+export default function Header() {
+  const isAuthenticated = useSelector(authSelectors.getIsAuthenticated);
   return (
     <header className={styles.header}>
       <Navigations />
       {isAuthenticated ? <UserMenu /> : <AuthNav />}
     </header>
   );
-};
-
-const mapStateToProps = (state) => ({
-  isAuthenticated: authSelectors.getIsAuthenticated(state),
-});
-
-export default connect(mapStateToProps)(Header);
+}
